@@ -4,6 +4,7 @@ public class ArrayOperation {
     private final int Size = 10;
     int []array = new int[Size];
     int lastIndex = 0;
+
     public void traverse(){
         for (int i = 0; i < array.length; i++) {
             System.out.print(array[i] + " ");
@@ -23,7 +24,6 @@ public class ArrayOperation {
         array[k] = x;
         lastIndex++;
     }
-
     public void deleteAt(int k){
         for (int i = k; i < lastIndex; i++) {
             array[i] = array[i+1];
